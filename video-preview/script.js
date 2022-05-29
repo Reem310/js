@@ -1,9 +1,9 @@
 console.log("page loaded...");
 
-function playVideo(vid) {
-    vid.play();
+function playVideo(e) {
+    e.play();
 }
 
-function pauseVideo(vid) {
-    vid.pause();
+function pauseVideo(e) {
+    e.pause();
 }
