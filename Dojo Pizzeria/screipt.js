@@ -19,18 +19,13 @@ function sandwichFactory(bread, protein, cheese, toppings) {
 var s1 = sandwichFactory("wheat", "turkey", "provolone", ["mustard", "fried onions", "arugula"]);
 console.log(s1);
 
-var pizza = [{
-crustType: "crustType",
-sauceType: "sauceType",
-cheeses: "cheeses",
-toppings: ["toppings"]
-}]
-
-function pizzaOven(pizza) {
-    return pizza
-}
-function randomPizza(pizza) {
-    return Math.random(pizza)* pizzaOven.length
+function pizzaOven(crustType, sauceType, cheeses, toppings) {
+    var pizza = {}
+pizza.crustType=crustType
+pizza.sauceType=sauceType
+pizza.cheeses=cheeses
+pizza.toppings=toppings
+return pizza
 }
 
 var p1= pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]);
@@ -38,4 +33,3 @@ console.log(p1);
 var p2= pizzaOven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"])
 console.log(p2)
 console.log(pizzaOven("deep dish", "traditional", ["mozzarella"], ["romaine lettuce", "heirloom tomatoes"]))
-console.log(randomPizza(pizza))
