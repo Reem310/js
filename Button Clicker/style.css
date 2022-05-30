@@ -1,3 +1,6 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 #wrapper{
     margin: 0% 10%;
 }
@@ -7,6 +10,8 @@
     background-color: bisque;
     align-items: center;
     margin: 0% 14%;
+    background-color: rgb(190, 191, 193);
+    padding: 1%;
 }
 .main{
     display: flex;
@@ -41,7 +46,8 @@
 .content1{
     display: flex;
     flex-direction: column;
-    margin: 1%;
+    margin: 2%;
+    width: 30%;
 }
 .ninja2{
     border: black solid 2px;
@@ -57,10 +63,35 @@
     margin: 1%;
 }
 input{
-    width: 50%;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 1%;
 }
-.ninja1 p{
-    font-style: italic;
+#nav button{
+    background-color: rgb(24, 144, 243);
+    box-shadow: 2px 2px black;
 }
-
-
+.left button{
+    background-color: rgb(236, 199, 79);
+    box-shadow: 2px 2px black;
+    padding: 5%;
+    width: fit-content;
+}
+.right button{
+    background-color: rgb(85, 196, 90);
+    box-shadow: 2px 2px black;
+    height: 25%; 
+}
+button{
+    font-weight: bold;
+}
+.content1 p{
+    display: flex;
+    margin-top:-10px ;
+    margin-right: 10px;
+}
+.content2 p{
+    display: flex;
+    margin-top:-10px ;
+    margin-right: 10px;
+}
