@@ -1,0 +1,84 @@
+<html>    
+    <head>    
+    <title>    
+        Simple Calculator    
+    </title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    
+    <script>    
+        //cdn//    
+        $(document).ready(function(){    
+            $("#btnAdd").on('click',function(){    
+                Add();    
+            });    
+            $("#btnSubstract").on('click',function(){    
+                Substract();    
+            })    
+            $("#btnMultiply").on('click',function(){    
+                Multiply();    
+            })    
+            $("#btnDivide").on('click',function(){    
+                Divide();    
+            })    
+        });    
+        function Add(){    
+         var no1=parseInt($("#txtNo1").val());    
+         var no2=parseInt($("#txtNo2").val());    
+         var result =no1+no2;    
+          alert("The result is "+result);    
+        }    
+        function Substract(){    
+         var no1=parseInt($("#txtNo1").val());    
+         var no2=parseInt($("#txtNo2").val());    
+         var result =no1-no2;    
+          alert("The result is "+result);    
+        }    
+        function Multiply(){    
+         var no1=parseInt($("#txtNo1").val());    
+         var no2=parseInt($("#txtNo2").val());    
+         var result =no1*no2;    
+          alert("The result is "+result);    
+        }    
+        function Divide(){    
+         var no1=parseInt($("#txtNo1").val());    
+         var no2=parseInt($("#txtNo2").val());    
+         var result =no1/no2;    
+          alert("The result is "+result);    
+        }    
+    </script>    
+    </head>    
+    <body>    
+       First Number <input type="text" id="txtNo1" placeholder="Enter first number"><br>    
+        Second Number<input type="text" id="txtNo2" placeholder="Enter second number"><br>    
+        <input type="button" id="btnAdd" value="Add">    
+        <input type="button" id="btnSubstract" value="Substract">    
+        <input type="button" id="btnMultiply" value="Multiply">    
+        <input type="button" id="btnDivide" value="Divide">  
+        <div id="display">0</div>
+        <div class="row">
+          <button onclick="press(7);">7</button>
+          <button onclick="press(8);">8</button>
+          <button onclick="press(9);">9</button>
+          <button class="operator" onclick="setOP('/');">÷</button>
+        </div>
+        <div class="row">
+          <button onclick="press(4);">4</button>
+          <button onclick="press(5);">5</button>
+          <button onclick="press(6);">6</button>
+          <button class="operator" onclick="setOP('*');">×</button>
+        </div>
+        <div class="row">
+          <button onclick="press(1);">1</button>
+          <button onclick="press(2);">2</button>
+          <button onclick="press(3);">3</button>
+          <button class="operator" onclick="setOP('-');">−</button>
+        </div>
+        <div class="row">
+          <button onclick="clr();">C</button>
+          <button onclick="press(0);">0</button>
+          <button onclick="press('.');">.</button>
+          <button class="operator" onclick="setOP('+');">+</button>
+        </div>
+        <div class="row">
+          <button id="equals" onclick="calculate()">=  
+    </body>    
+    </html>   

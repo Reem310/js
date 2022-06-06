@@ -1,0 +1,15 @@
+#calculator{
+    background-color: bisque;
+}
+#display{
+    background-color: aquamarine;
+}
+.row{
+    background-color: blueviolet;
+}
+.operator{
+    background-color: blue;
+}
+#equals{
+    background-color: brown;
+}
