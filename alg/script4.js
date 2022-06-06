@@ -44,7 +44,26 @@ function join(arr, separator) {
   
   function bookIndex(pageNums) {
     // code here
-  }
+        if(pageNums.length == 0){
+            return ""
+        }
+        var string =""
+        for (var i=0; i<pageNums.length-1; i++){
+            if(pageNums[i+1] == pageNums[i]+1){
+                if(pageNums[i]-1 != pageNums[i-1]){
+                    string+=pageNums[i]
+                    string+="-"
+                }
+            }
+            else{
+                string+=pageNums[i]
+                string+=", "
+            }
+        }
+        string+=pageNums[pageNums.length-1]
+        return string
+    }
+  
 
 
 var myName = ["firstName", "lastName"];
