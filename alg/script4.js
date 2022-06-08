@@ -63,7 +63,6 @@ function join(arr, separator) {
         string+=pageNums[pageNums.length-1]
         return string
     }
-  
 
 
 var myName = ["firstName", "lastName"];
